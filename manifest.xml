@@ -3,9 +3,9 @@
 	<name>Elgg.org Theme</name>
 	<author>Core developers</author>
 	<version>1.8</version>
-	<description>Elgg.dot theme</description>
+	<description>Elgg.org theme</description>
 	<website>http://www.elgg.org/</website>
-	<copyright>(C) Curverider 2008-2010, Elgg core developers 2011</copyright>
+	<copyright>Elgg core developers 2011-2013</copyright>
 	<licence>GNU Public License version 2</licence>
 
    	<requires>

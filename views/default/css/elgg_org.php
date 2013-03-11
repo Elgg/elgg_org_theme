@@ -51,18 +51,17 @@ Footer
 	background: url(<?php echo $gfx; ?>/silver_border_h.gif) no-repeat scroll left bottom transparent
 }
 
-
-/****
-Community
-*****/
+/* subpage compress header */
+.elgg-page-default .elgg-page-header {
+	/* background: url(<?php echo $gfx;?>/header_bk.jpg) repeat-x scroll left -208px white; */
+	background-color: #00b1f7;
+	border-bottom: 2px solid #BEBEBE;
+}
 
 .elgg-page-default .elgg-page-header > .elgg-inner {
 	height: 105px;
 }
 
-/*****
-Dot org
-*****/
 
 /*****
 featured module
@@ -190,7 +189,7 @@ Dot org landing
 .elgg-menu-elgg-org-site {
 	background-color: #0054A7;
 	overflow: hidden;
-	padding-left: 40px;
+	text-align: center;
 }
 
 .elgg-menu-elgg-org-site > li {

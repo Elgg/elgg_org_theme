@@ -4,10 +4,9 @@
  */
 
 $site = elgg_get_site_entity();
-$site_name = $site->name;
 $site_url = elgg_get_site_url();
 
-$src = elgg_normalize_url("mod/elgg_org/graphics/logo.png");
+$src = elgg_normalize_url("mod/elgg_org_theme/graphics/logo.png");
 
 ?>
 

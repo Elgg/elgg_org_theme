@@ -1,7 +1,10 @@
 <?php
 /**
  * Elgg Community Theme
- * 
+ *
+ * @todo
+ * Pull "who uses Elgg" entries from the screenshot on community.
+ *     Need to expose some sort of WS for that.
  */
      
 elgg_register_event_handler('init', 'system', 'elgg_org_theme_init');
@@ -21,27 +24,34 @@ function elgg_org_theme_init() {
 	elgg_register_plugin_hook_handler('index', 'system', 'elgg_org_theme_front_page');
 	
 	// menus
+
 	$items = array(
-		'home' => array('Home', 'elgg.org'),
+//		'home' => array('Home', 'elgg.org'),
 		'foundation' => array('Foundation', 'foundation.elgg.org'),
 		'community' => array('Community', 'community.elgg.org'),
 		'blog' => array('Blog', 'blog.elgg.org'),
-		'hosting' => array('Hosting', 'elgg.org/hosting.php'),
-		'services' => array('Services', 'elgg.org/services.php'),
+		'hosting' => array('Hosting', '/hosting/'),
+		'services' => array('Services', '/services/'),
 		'docs' => array('Docs', 'docs.elgg.org'),
 	);
+
+	// remove the entire site menu because we replace it with these.
+	$menus = get_config("menus");
+	$menus['site'] = array();
+	elgg_set_config('menus', $menus);
 
 	foreach ($items as $id => $info) {
 		list($text, $href) = $info;
 		$item = new ElggMenuItem($id, $text, $href);
 		elgg_register_menu_item('elgg_org_site', $item);
+		elgg_register_menu_item('site', $item);
 		elgg_register_menu_item('footer_navigation', $item);
 	}
 
 	// downloads
 	$href = elgg_view('output/url', array(
 		'text' => '<h2>Download</h2>Elgg 1.7',
-		'href' => 'elgg.org/download.php',
+		'href' => 'download/',
 		'class' => 'elgg-button elgg-button-featured',
 		'is_trusted' => true
 	));
@@ -50,7 +60,7 @@ function elgg_org_theme_init() {
 
 	$href = elgg_view('output/url', array(
 		'text' => '<h2>Download</h2>Elgg 1.8',
-		'href' => 'elgg.org/download.php',
+		'href' => 'download.php',
 		'class' => 'elgg-button elgg-button-featured',
 		'is_trusted' => true
 	));
