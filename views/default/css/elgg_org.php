@@ -96,7 +96,7 @@ landing banner
 
 .elgg-banner .elgg-module-featured {
 	border: 0px;
-	margin: 28px 0 0 42px;
+	margin: 28px 0 0 36px;
 	min-height: 145px;
 }
 
@@ -144,7 +144,7 @@ Dot org landing
 
 .elgg-page-elgg-org-landing > .elgg-page-header > .elgg-inner > h1 {
 	top: 10px;
-	left: 70px;
+	left: 58px;
 	position: absolute;
 }
 
@@ -175,7 +175,7 @@ Dot org landing
  ***/
 
 .elgg-menu-elgg-org-downloads {
-	padding: 20px 0 0 42px;
+	padding: 20px 0 0 36px;
 	text-align: center;
 	position: absolute;
 	top: 248px;
