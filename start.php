@@ -29,7 +29,7 @@ function elgg_org_theme_init() {
 //		'home' => array('Home', 'elgg.org'),
 		'foundation' => array('Foundation', 'foundation.elgg.org'),
 		'community' => array('Community', 'community.elgg.org'),
-		'blog' => array('Blog', 'blog.elgg.org'),
+		'blog' => array('Blog', 'blog/all'),
 		'hosting' => array('Hosting', '/hosting/'),
 		'services' => array('Services', '/services/'),
 		'docs' => array('Docs', 'docs.elgg.org'),

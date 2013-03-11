@@ -3,15 +3,15 @@
  * Sidebar for the elgg.org landing page
  */
 
-$news_items = array(
-	'url' => array('Test news item', 'This is a blog post from blog.elgg.org'),
-	'url2' => array('Test news item 2', 'This is a blog post from blog.elgg.org'),
-);
+$posts =  elgg_get_entities(array(
+	'type' => 'object',
+	'subtype' => 'blog',
+	'limit' => 5,
+	'full_view' => false
+));
 
-foreach ($news_items as $id => $info) {
-	list($title, $body) = $info;
-	
-	$item = new ElggMenuItem($id, $title, $url);
+foreach ($posts as $id => $post) {
+	$item = new ElggMenuItem($id, $post->title, $post->getURL());
 	$item->setSection('news');
 	elgg_register_menu_item('page', $item);
 }
