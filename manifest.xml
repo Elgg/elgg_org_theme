@@ -17,4 +17,10 @@
 		<type>plugin</type>
 		<name>elgg_releases</name>
 	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>anypage</name>
+	</requires>
+
 </plugin_manifest>
