@@ -50,23 +50,30 @@ function elgg_org_theme_init() {
 	}
 
 	// downloads
-	$href = elgg_view('output/url', array(
-		'text' => '<h2>Download</h2>Elgg 1.7',
-		'href' => 'download/',
-		'class' => 'elgg-button elgg-button-featured',
-		'is_trusted' => true
-	));
-	$item = new ElggMenuItem('1.7', $href, false);
-	elgg_register_menu_item('elgg_org_downloads', $item);
+	// 1.7
+	$release = ElggRelease::getLatestReleaseFromBranch(1.7);
+	if ($release) {
+		$href = elgg_view('output/url', array(
+			'text' => '<h2>Download</h2>Elgg 1.7',
+			'href' => $release->getURL(),
+			'class' => 'elgg-button elgg-button-featured',
+			'is_trusted' => true
+		));
+		$item = new ElggMenuItem('1.7', $href, false);
+		elgg_register_menu_item('elgg_org_downloads', $item);
+	}
 
-	$href = elgg_view('output/url', array(
-		'text' => '<h2>Download</h2>Elgg 1.8',
-		'href' => 'download.php',
-		'class' => 'elgg-button elgg-button-featured',
-		'is_trusted' => true
-	));
-	$item = new ElggMenuItem('1.8', $href, false);
-	elgg_register_menu_item('elgg_org_downloads', $item);
+	$release = ElggRelease::getLatestReleaseFromBranch(1.8);
+	if ($release) {
+		$href = elgg_view('output/url', array(
+			'text' => '<h2>Download</h2>Elgg 1.8',
+			'href' => $release->getURL(),
+			'class' => 'elgg-button elgg-button-featured',
+			'is_trusted' => true
+		));
+		$item = new ElggMenuItem('1.8', $href, false);
+		elgg_register_menu_item('elgg_org_downloads', $item);
+	}
 
 	// elgg_org features
 	$items = array(
