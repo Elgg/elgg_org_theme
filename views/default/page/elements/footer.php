@@ -30,7 +30,7 @@ $footer = elgg_view_menu('footer', array(
 	<h2>Legal</h2>
 		&copy;2012 the Elgg Foundation<br />
 		Elgg is a registered trademark of Thematic Networks.<br />
-		<a href="http://elgg.org/domain.php">Domain policy</a>.<br />
+		<a href="<?php echo elgg_normalize_url('/domain_policy/'); ?>">Domain policy</a>.<br />
 	</span>
 	<?php echo $footer; ?>
 </div>

@@ -19,7 +19,7 @@ $gfx = elgg_normalize_url('mod/elgg_org_theme/graphics');
 Common
 *****/
 body {
-	background-color: black;
+	background-color: white;
 }
 
 .elgg-page-body {
