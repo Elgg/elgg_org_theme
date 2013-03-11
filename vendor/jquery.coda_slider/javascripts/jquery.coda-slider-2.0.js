@@ -2,13 +2,17 @@
 	jQuery Coda-Slider v2.0 - http://www.ndoherty.biz/coda-slider
 	Copyright (c) 2009 Niall Doherty
 	This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
+
+	Modified to not show the "Loading..." text.
 */
 
 $(function(){
 	// Remove the coda-slider-no-js class from the body
 	$("body").removeClass("coda-slider-no-js");
 	// Preloader
-	$(".coda-slider").children('.panel').hide().end().prepend('<p class="loading">Loading...<br /><img src="images/ajax-loader.gif" alt="loading..." /></p>');
+//	$(".coda-slider").children('.panel').hide().end().prepend('<p class="loading">Loading...<br /><img src="images/ajax-loader.gif" alt="loading..." /></p>');
+	// don't hide the first element so there is no loading flash.
+	$(".coda-slider").children('.panel').slice(1).hide();
 });
 
 var sliderCount = 1;
