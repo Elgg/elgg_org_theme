@@ -33,6 +33,7 @@ function elgg_org_theme_init() {
 		'hosting' => array('Hosting', '/hosting/'),
 		'services' => array('Services', '/services/'),
 		'docs' => array('Docs', 'docs.elgg.org'),
+		'downloads' => array('Downloads', '/releases/')
 	);
 
 	// remove the entire site menu because we replace it with these.
