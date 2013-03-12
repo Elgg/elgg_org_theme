@@ -197,7 +197,7 @@ Dot org landing
 	font-size: 20px;
 	font-weight: normal;
 	margin: 8px 0;
-	padding: 23px 24px;
+	padding: 10px 24px;
 }
 
 .elgg-menu-elgg-org-site > li > a {
