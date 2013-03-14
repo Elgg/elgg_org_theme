@@ -8,7 +8,7 @@ $english = array(
 	
 	'menu:footer-navigation:header:default' => 'Navigation',
 	'menu:page:header:links' => 'Links',
-	'menu:page:header:news' => 'News',
+	'menu:page:header:news' => 'Latest News',
 );
 
 add_translation("en", $english);

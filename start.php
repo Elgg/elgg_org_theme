@@ -4,14 +4,30 @@
  *
  * @todo
  * Pull "who uses Elgg" entries from the screenshot on community.
- *     Need to expose some sort of WS for that.
+ *     Need to expose some sort of WSAPI for that.
+ *
+ * Make the sidebar always show news
+ *
+ * Code remaining:
+ *     CRUD for services / supporters / events
+ *	      Include expiration date
+ *
+ * Content remaining:
+ *     * Features
+ *     * Slider slides
+ *     * Domain policy
+ *     * FAQs?
+ *
+ * Possible additions:
+ *     Pull in latest discussion from community in sidebar.
  */
      
 elgg_register_event_handler('init', 'system', 'elgg_org_theme_init');
 
 function elgg_org_theme_init() {
 	elgg_extend_view('css/elgg', 'css/elgg_org');
-	elgg_register_js('jquery.coda_slider', elgg_get_site_url() . 'mod/elgg_org_theme/vendor/jquery.coda_slider/javascripts/jquery.coda-slider-2.0.js');
+	elgg_register_js('jquery.coda_slider',
+			elgg_get_site_url() . 'mod/elgg_org_theme/vendor/jquery.coda_slider/javascripts/jquery.coda-slider-2.0.js');
 
 	elgg_register_simplecache_view('css/coda_slider');
 	$url = elgg_get_simplecache_url('css', 'coda_slider');
@@ -29,9 +45,9 @@ function elgg_org_theme_init() {
 //		'home' => array('Home', 'elgg.org'),
 		'foundation' => array('Foundation', 'foundation.elgg.org'),
 		'community' => array('Community', 'community.elgg.org'),
-		'blog' => array('Blog', 'blog/all'),
+		'news' => array('News', 'blog/all'),
 		'hosting' => array('Hosting', '/hosting/'),
-		'services' => array('Services', '/services/'),
+		'services' => array('Services', '/service_providers/'),
 		'docs' => array('Docs', 'docs.elgg.org'),
 		'downloads' => array('Downloads', '/releases/')
 	);
@@ -126,7 +142,6 @@ function elgg_org_theme_front_page($hook, $type, $return, $params) {
 		return $return;
 	}
 
-	elgg_push_context('elgg_org');
 	elgg_load_js('jquery.coda_slider');
 	elgg_load_css('jquery.coda_slider');
 	elgg_load_js('elgg.elgg_org');
@@ -148,4 +163,3 @@ function elgg_org_theme_front_page($hook, $type, $return, $params) {
 	
 	return true;
 }
-	
