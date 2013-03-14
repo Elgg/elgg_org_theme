@@ -155,6 +155,10 @@ Dot org landing
 	margin: auto;
 }
 
+.elgg-banner > li {
+	visibility: hidden;
+}
+
 .elgg-banner-blurb {
 	width: 442px;
 	text-align: left;
