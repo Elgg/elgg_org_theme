@@ -134,7 +134,7 @@ Dot org landing
 *******/
 
 .elgg-page-elgg-org-landing > .elgg-page-header {
-	background: url(<?php echo $gfx;?>/header_bk.jpg) repeat-x scroll left top white;
+	background: url(<?php echo $gfx;?>/header_bk.jpg) repeat-x scroll left top #00B1F7;
 	border-bottom: 2px solid #BEBEBE;
 }
 

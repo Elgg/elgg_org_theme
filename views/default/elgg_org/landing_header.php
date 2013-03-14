@@ -15,8 +15,5 @@ $link = elgg_view('output/url', array(
 
 echo "<h1>$link</h1>";
 
-// drop-down login
-echo elgg_view('core/account/login_dropdown');
-
 // banner
 echo elgg_view('elgg_org/landing_banner', $vars);

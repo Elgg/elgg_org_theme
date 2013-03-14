@@ -29,7 +29,7 @@ echo elgg_view_menu('elgg_org_downloads', array('class' => 'elgg-menu-hz'));
 		<img class="elgg-screenshot float-alt" src="<?php echo $gfx;?>/slides/pic.jpg" />
 	</li>
 
-	<li class="elgg-inner panel">
+	<li class="elgg-inner panel hidden">
 		<div class="panel-wrapper float elgg-banner-blurb">
 			<?php echo $blurb; ?>
 		</div>
