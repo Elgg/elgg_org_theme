@@ -125,6 +125,9 @@ function elgg_org_theme_init() {
 		$item = new ElggMenuItem($id, $text, $href);
 		elgg_register_menu_item('elgg_org_users', $item);
 	}
+
+	// remove entity menus unless logged in.
+	elgg_register_plugin_hook_handler('prepare', 'menu:entity', 'elgg_org_theme_remove_entity_menu');
 }
 
 /**
@@ -162,4 +165,19 @@ function elgg_org_theme_front_page($hook, $type, $return, $params) {
 	));
 	
 	return true;
+}
+
+/**
+ * Remove entity menus
+ *
+ * @param type $hook
+ * @param type $type
+ * @param type $value
+ * @param type $params
+ * @return type
+ */
+function elgg_org_theme_remove_entity_menu($hook, $type, $value, $params) {
+	if (!elgg_is_logged_in()) {
+		return array();
+	}
 }
