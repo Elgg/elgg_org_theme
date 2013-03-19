@@ -11,9 +11,13 @@ $title = 'Introducing a powerful open source social networking engine.';
 $body = 'Providing you with the tools you need to build socially aware applications.';
 $blurb = elgg_view_module('featured', $title, $body);
 
-$blurb2 = elgg_view_image_block(null, $blurb, array(
-	'image_alt' => '<img class="mrl elgg-banner-screenshot" src="' . $gfx . '/slides/pic.jpg" alt="Elgg Screenshot" />'
-));
+$title = 'Amazing fun for everyone.';
+$body = 'You will have amazing amounts of fun with Elgg.';
+$blurb2 = elgg_view_module('featured', $title, $body);
+
+$title = 'Elgg does everything.';
+$body = 'Hamster. Cats. Dogs. You name it!';
+$blurb3 = elgg_view_module('featured', $title, $body);
 
 // downloads
 echo elgg_view_menu('elgg_org_downloads', array('class' => 'elgg-menu-hz'));
@@ -31,9 +35,16 @@ echo elgg_view_menu('elgg_org_downloads', array('class' => 'elgg-menu-hz'));
 
 	<li class="elgg-inner panel">
 		<div class="panel-wrapper float elgg-banner-blurb">
-			<?php echo $blurb; ?>
+			<?php echo $blurb2; ?>
 		</div>
-		<img class="elgg-screenshot float-alt" src="<?php echo $gfx;?>/slides/pic.jpg" />
+		<img class="elgg-screenshot float-alt" src="<?php echo $gfx;?>/slides/community.jpg" />
+	</li>
+
+	<li class="elgg-inner panel">
+		<div class="panel-wrapper float elgg-banner-blurb">
+			<?php echo $blurb3; ?>
+		</div>
+		<img class="elgg-screenshot float-alt" src="<?php echo $gfx;?>/slides/hamsters.jpg" />
 	</li>
 </ul>
 

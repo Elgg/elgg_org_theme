@@ -128,6 +128,9 @@ landing banner
 	z-index: 10;
 }
 
+.elgg-banner-scroller.elgg-banner-next {
+	margin-left: -28px;
+}
 
 /******
 Dot org landing
@@ -159,19 +162,21 @@ Dot org landing
 	visibility: hidden;
 }
 
+
+.elgg-banner .elgg-inner.panel {
+	height: 268px;
+}
+
 .elgg-banner-blurb {
 	width: 442px;
 	text-align: left;
 }
 
-.elgg-banner-screenshots {
-	text-align: right;
-	width: 500px;
-}
-
 .elgg-banner img.elgg-screenshot {
 	margin-right: 42px;
 	box-shadow: 0 0 25px #666666;
+	max-width: 446px;
+	max-height: 267px;
 }
 
 /****
