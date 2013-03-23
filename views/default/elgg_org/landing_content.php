@@ -39,8 +39,6 @@ $features = elgg_view_menu('elgg_org_features', array(
 	'sort_by' => 'register'
 ));
 
-echo elgg_view_module('featured', 'Features', $features, array('class' => 'clearfloat'));
-
 $users = elgg_view_menu('elgg_org_users', array(
 	'class' => 'elgg-menu-hz elgg-elgg-org-slider',
 	'sort_by' => 'register'
