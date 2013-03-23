@@ -7,7 +7,7 @@ elgg.elgg_org.init = function() {
 	//banner slider
 	$('#slider').codaSlider({
 		autoHeight: false,
-		autoSlide: true,
+		autoSlide: false,
 		autoSlideStopWhenClicked: true,
 		dynamicArrows: false,
 		dynamicTabs: false
