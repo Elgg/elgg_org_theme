@@ -34,11 +34,6 @@ $right_modules = array(
 
 <?php
 
-$features = elgg_view_menu('elgg_org_features', array(
-	'class' => 'elgg-menu-hz elgg-elgg-org-slider',
-	'sort_by' => 'register'
-));
-
 $users = elgg_view_menu('elgg_org_users', array(
 	'class' => 'elgg-menu-hz elgg-elgg-org-slider',
 	'sort_by' => 'register'
