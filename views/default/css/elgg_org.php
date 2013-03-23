@@ -272,7 +272,7 @@ Dot org landing
 	background: url(<?php echo $gfx; ?>/orng_btn.png) no-repeat scroll center 4px transparent;
 	width: 152px;
 	height: 60px;
-	color: #5F200D;
+	color: white;
 	font-size: 14px;
 	line-height: 14px;
 }
