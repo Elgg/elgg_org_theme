@@ -43,7 +43,7 @@ function elgg_org_theme_init() {
 
 	$items = array(
 //		'home' => array('Home', 'elgg.org'),
-		'foundation' => array('Foundation', 'foundation.elgg.org'),
+		'foundation' => array('Foundation', '/foundation/'),
 		'community' => array('Community', 'community.elgg.org'),
 		'news' => array('News', 'blog/all'),
 		'hosting' => array('Hosting', '/hosting/'),
