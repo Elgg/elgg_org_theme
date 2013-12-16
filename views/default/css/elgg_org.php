@@ -6,9 +6,8 @@
  * Dark grey: #bebebe
  * Grey text: #666666
  *
- * Dark blue: #0054A7
- * Lighter dark blue: #4690D6
- * Light header blue: #00b1f7
+ * Dark blue text: #0054A7
+ * Lighter blue: #4690D6
  * 
  */
 
@@ -108,11 +107,10 @@ landing banner
 
 .elgg-banner .elgg-module-featured > .elgg-body {
 	padding: 5px 5px 5px 0;
-	font-weight: bold;
-	font-style: normal;
+	font-style: italic;
 	font-size: 20px;
 	line-height: 21px;
-	color: #0A285A;
+	color: #eee;
 }
 
 .elgg-banner-scroller {
@@ -131,7 +129,7 @@ Dot org landing
 *******/
 
 .elgg-page-elgg-org-landing > .elgg-page-header {
-	background: url(<?php echo $gfx;?>/header_bk.jpg) repeat-x scroll left top #00B1F7;
+	background: url(<?php echo $gfx;?>/header_bk.jpg) repeat-x scroll left top #4690D6;
 	border-bottom: 2px solid #BEBEBE;
 }
 
