@@ -181,3 +181,39 @@ function elgg_org_theme_remove_entity_menu($hook, $type, $value, $params) {
 		return array();
 	}
 }
+
+/**
+ * Gets an array of slides to display on the landing page
+ *
+ * @return array
+ */
+function elgg_org_theme_get_slides() {
+
+	$gfx = elgg_normalize_url('mod/elgg_org_theme/graphics/');
+
+	return array(
+		array(
+			'title' => 'Introducing a powerful open source social networking engine.',
+			'body' => 'Providing you with the tools you need to build socially aware applications.',
+			'image' => "$gfx/slides/pic.jpg"
+		),
+
+		array(
+			'title' => 'Amazing funf or everyone.',
+			'body' => 'You will have amazing amounts of fun with Elgg.',
+			'image' => "$gfx/slides/community.jpg"
+		),
+
+		array(
+			'title' => 'Elgg does everything.',
+			'body' => 'Hamsters. Cats. Dogs. You name it!',
+			'image' => "$gfx/slides/hamsters.jpg"
+		),
+
+		array(
+			'title' => 'Another slide',
+			'body' => 'With more info',
+			'image' => "$gfx/slides/pic.jpg"
+		)
+	);
+}
