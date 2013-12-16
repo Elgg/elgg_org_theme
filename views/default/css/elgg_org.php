@@ -52,12 +52,6 @@ Footer
 }
 
 /* subpage compress header */
-.elgg-page-default .elgg-page-header {
-	/* background: url(<?php echo $gfx;?>/header_bk.jpg) repeat-x scroll left -208px white; */
-	background-color: #00b1f7;
-	border-bottom: 2px solid #BEBEBE;
-}
-
 .elgg-page-default .elgg-page-header > .elgg-inner {
 	height: 105px;
 }
