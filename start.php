@@ -199,7 +199,7 @@ function elgg_org_theme_get_slides() {
 		),
 
 		array(
-			'title' => 'Amazing funf or everyone.',
+			'title' => 'Amazing fun for everyone.',
 			'body' => 'You will have amazing amounts of fun with Elgg.',
 			'image' => "$gfx/slides/community.jpg"
 		),
